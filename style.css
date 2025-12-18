@@ -904,6 +904,47 @@ body {
   }
 }
 
+/* ================= WHATSAPP CHAT BUTTON ================= */
+.whatsapp-chat {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 10001;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: #25D366;
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 50px;
+
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-chat img {
+  width: 26px;
+  height: 26px;
+}
+
+.whatsapp-chat:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .whatsapp-chat span {
+    display: none; /* icon only on mobile */
+  }
+}
+
 /* ================= ABOUT PAGE ================= */
 .about-page {
   padding: 60px 6%;
