@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dhanashree Dress Shop - Collections</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="header-container">
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="logo.p" alt="Dhanashree Dress ">
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="collections.html">Collections</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+
+      <a href="tel:+919999999999" class="call-btn">
+        <i class="fa-solid fa-phone"></i> Call Now
+      </a>
+    </nav>
+
+    <!-- Mobile Menu Icon -->
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+  </div>
+</header>
+
+<!-- ================= COLLECTIONS PAGE ================= -->
+<section class="collections-page">
+  <div class="collections-page-container">
+    <h2>Our Collections</h2>
+    <p>Explore our stylish dresses. Use the search or filter options to find your favorite category.</p>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search products...">
+    </div>
+
+    <!-- Select Dropdown for Categories -->
+    <div class="category-select">
+      <select id="categorySelect">
+        <option value="all">All</option>
+        <option value="kid">Kid's Wear</option>
+        <option value="men">Men's Wear</option>
+        <option value="women">Women's Wear</option>
+        <option value="ethnic">Ethnic Wear</option>
+      </select>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="products-grid" id="productsGrid">
+      <!-- Example product items (repeat for 50 products) -->
+      <div class="product-item" data-category="kid">
+        <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6" alt="Kid Dress 1">
+        <h4>Kid's Summer Dress</h4>
+      </div>
+      <div class="product-item" data-category="men">
+        <img src="https://images.unsplash.com/photo-1520975922284-7b9588b46c38" alt="Men Shirt 1">
+        <h4>Men's Casual Shirt</h4>
+      </div>
+      <div class="product-item" data-category="women">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Women Dress 1">
+        <h4>Women's Party Dress</h4>
+      </div>
+      <div class="product-item" data-category="ethnic">
+        <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990" alt="Ethnic Dress 1">
+        <h4>Ethnic Kurti</h4>
+      </div>
+      <!-- Add more product items up to 50 -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- About / Shop Info -->
+    <div class="footer-about">
+      <h3>Dhanshree Dress Shop</h3>
+      <p>Stylish and affordable dresses for all ages. Bringing the latest trends to your wardrobe.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collections.html">Our Collections</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Rajkumar Biradar</p>
+      <p>Phone: +91 98765 43210</p>
+      <p>Email: rajkumar@shopname.com</p>
+      <p>Location: 123 Fashion Street, City, State, India</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Dhanshree Dress Shop. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

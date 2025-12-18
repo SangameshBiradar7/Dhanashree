@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dhanashree Dress Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="header-container">
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="logo.p" alt="Dhanashree Dress ">
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="collections.html">Collections</a>
+      <a href="about.html">About</a>
+      <a href="contact.">Contact</a>
+
+      <a href="tel:+919999999999" class="call-btn">
+        <i class="fa-solid fa-phone"></i> Call Now
+      </a>
+    </nav>
+
+    <!-- Mobile Menu Icon -->
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+  </div>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero-slider">
+
+  <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a');">
+    <div class="hero-content">
+      <h1>Premium Clothing for Every Family</h1>
+      <p>Men’s, Women’s, Kids & Ethnic Wear under one roof</p>
+      <a href="#" class="hero-btn">Explore Collections</a>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1521334884684-d80222895322');">
+    <div class="hero-content">
+      <h1>Latest Ethnic & Festive Wear</h1>
+      <p>Perfect styles for weddings & festivals</p>
+      <a href="#" class="hero-btn">View Ethnic Wear</a>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1593032465175-481ac7f401a0');">
+    <div class="hero-content">
+      <h1>Comfortable Daily & Kids Wear</h1>
+      <p>Quality fabrics at affordable prices</p>
+      <a href="#" class="hero-btn">Shop Now</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- ================= SMALL SCROLLING DISCOUNT BANNER ================= -->
+<section class="small-discount-banner">
+  <div class="banner-content">
+    <p>🎉 30% OFF on All Clothes – Men, Women, Kids & Ethnic Wear! Limited Time Only! 🎉</p>
+  </div>
+</section>
+
+<!-- ================= NEW ARRIVALS SHOWCASE ================= -->
+<section class="new-arrivals">
+  <div class="section-title">
+    <h2>New Arrivals</h2>
+    <p>Discover our latest dresses – casual, party, seasonal, and limited editions</p>
+  </div>
+
+  <!-- Casual Everyday Dresses -->
+  <div class="arrival-category">
+    <h3>Casual Everyday Dresses</h3>
+    <div class="arrival-grid">
+      <div class="arrival-card">
+        <img src="https://images.unsplash.com/photo-1593032457868-0c3f05a29d69" alt="A-line Dress">
+        <h4>A-line Cotton Dress</h4>
+      </div>
+      <div class="arrival-card">
+        <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6" alt="Shift Dress">
+        <h4>Shift Linen Dress</h4>
+      </div>
+      <div class="arrival-card">
+        <img src="https://images.unsplash.com/photo-1583001809873-a128495da465" alt="Shirt Dress">
+        <h4>Button Shirt Dress</h4>
+      </div>
+      <div class="arrival-card">
+        <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246" alt="Casual Dress">
+        <h4>Pastel Rayon Dress</h4>
+      </div>
+      <div class="arrival-card">
+        <img src="https://images.unsplash.com/photo-1562158071-8f9b622b6c52" alt="Casual Dress">
+        <h4>Mint Everyday Dress</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- Party / Evening Dresses -->
+  <div class="arrival-category">
+    <h3>Party / Evening Dresses</h3>
+    <div class="arrival-grid">
+      <div class="arrival-card">
+        <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990" alt="Bodycon Dress">
+        <h4>Mini Bodycon Dress</h4>
+      </div>
+      <div class="arrival-card">
+        <img src="https://images.unsplash.com/photo-1600180758880-7b94519a8ba6" alt="Satin Dress">
+        <h4>Satin Slip Dress</h4>
+      </div>
+      <div class="arrival-card">
+        <img src="https://images.unsplash.com/photo-1581093588401-7fbeeaff4ff1" alt="Wrap Dress">
+        <h4>Wrap Dress</h4>
+      </div>
+      <div class="arrival-card">
+        <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a" alt="Party Dress">
+        <h4>Sequined Party Dress</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trendy / Seasonal Picks -->
+  <div class="arrival-category">
+    <h3>Trendy / Seasonal Picks</h3>
+    <div class="arrival-grid">
+      <div class="arrival-card">
+        <img src="https://images.unsplash.com/photo-1520975922284-7b9588b46c38" alt="Puff Sleeve">
+        <h4>Puff-sleeve Dress</h4>
+      </div>
+      <div class="arrival-card">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Off Shoulder">
+        <h4>Off-shoulder Dress</h4>
+      </div>
+      <div class="arrival-card">
+        <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246" alt="Ruffled Dress">
+        <h4>Ruffled Tiered Dress</h4>
+      </div>
+      <div class="arrival-card">
+        <img src="https://images.unsplash.com/photo-1562158071-8f9b622b6c52" alt="Floral Dress">
+        <h4>Floral Summer Dress</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- Limited Edition / Statement Pieces -->
+  <div class="arrival-category">
+    <h3>Limited Edition / Statement Pieces</h3>
+    <div class="arrival-grid">
+      <div class="arrival-card">
+        <img src="https://images.unsplash.com/photo-1583001809873-a128495da465" alt="Embroidered Dress">
+        <h4>Embroidered Dress</h4>
+      </div>
+      <div class="arrival-card">
+        <img src="https://images.unsplash.com/photo-1593032457868-0c3f05a29d69" alt="Hand-painted Dress">
+        <h4>Hand-painted Dress</h4>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ================= OUR COLLECTIONS ================= -->
+<section class="our-collections">
+  <div class="collections-container">
+
+    <!-- Left Side Text -->
+    <div class="collections-text">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Peacock_icon.svg" alt="Peacock Icon" class="collections-icon">
+      <h2>Our Collections</h2>
+      <p>Woven with tradition, designed for today. Explore our diverse collections for every age and style—Kids, Men, and Women.</p>
+    </div>
+
+    <!-- Right Side Categories -->
+    <div class="collections-products">
+      <a href="collections.html" class="collection-category">
+        <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6" alt="Kid's Wear">
+        <h4>Kid's Wear</h4>
+      </a>
+      <a href="collections.html" class="collection-category">
+        <img src="https://images.unsplash.com/photo-1520975922284-7b9588b46c38" alt="Men's Wear">
+        <h4>Men's Wear</h4>
+      </a>
+      <a href="collections.html" class="collection-category">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Women's Wear">
+        <h4>Women's Wear</h4>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= ABOUT US ================= -->
+<section class="about-us">
+  <div class="about-container">
+
+    <!-- Left Side Text -->
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        Welcome to our store! Founded and passionately managed by <strong>Rajkumar Biradar</strong>, our mission is to bring stylish, trendy, and affordable dresses to everyone. Rajkumar has always been fascinated by new fashion trends and innovative designs.
+      </p>
+      <p>
+        Our goal is to make shopping a delightful experience by offering a wide range of garments that suit all occasions, from casual wear to party outfits. We believe that fashion should not only look good but also feel comfortable and accessible.
+      </p>
+      <p>
+        With a keen eye for detail, we handpick each dress to ensure it meets our high standards of style, comfort, and affordability. Come explore our collections and discover fashion that truly speaks to you.
+      </p>
+    </div>
+
+    <!-- Right Side Image -->
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1555529669-5b738b7d75d5" alt="Our Shop Image">
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+<section class="why-choose-us">
+  <div class="choose-container">
+    <h2>Why Customers Choose Us</h2>
+    <p>We believe in quality, style, and affordability. Here’s why our customers love shopping with us:</p>
+
+    <div class="choose-cards">
+      <div class="choose-card">
+        <i class="fas fa-star"></i>
+        <h4>High Quality</h4>
+        <p>Each dress is carefully selected to ensure premium quality and lasting comfort.</p>
+      </div>
+
+      <div class="choose-card">
+        <i class="fas fa-tag"></i>
+        <h4>Affordable Prices</h4>
+        <p>Trendy and stylish dresses that fit your budget without compromising style.</p>
+      </div>
+
+      <div class="choose-card">
+        <i class="fas fa-handshake"></i>
+        <h4>Trusted by Customers</h4>
+        <p>We have built a loyal community with honest service and customer satisfaction.</p>
+      </div>
+
+      <div class="choose-card">
+        <i class="fas fa-palette"></i>
+        <h4>Latest Trends</h4>
+        <p>Always up-to-date with new fashion styles, so you look stylish every time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT US ================= -->
+<section class="contact-us">
+  <div class="contact-container">
+
+    <!-- Left Side: Contact Info -->
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to visit our shop? Reach out to us anytime. We’d love to hear from you!</p>
+
+      <div class="info-item">
+        <strong>Owner:</strong> Rajkumar Biradar
+      </div>
+      <div class="info-item">
+        <strong>Phone:</strong> +91 98765 43210
+      </div>
+      <div class="info-item">
+        <strong>Email:</strong> rajkumar@shopname.com
+      </div>
+      <div class="info-item">
+        <strong>Location:</strong> 123 Fashion Street, City, State, India
+      </div>
+    </div>
+
+    <!-- Right Side: Contact Form -->
+    <div class="contact-form">
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="phone" placeholder="Your Phone Number">
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- About / Shop Info -->
+    <div class="footer-about">
+      <h3>Dhanshree Dress Shop</h3>
+      <p>Stylish and affordable dresses for all ages. Bringing the latest trends to your wardrobe.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collections.html">Our Collections</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Rajkumar Biradar</p>
+      <p>Phone: +91 98765 43210</p>
+      <p>Email: rajkumar@shopname.com</p>
+      <p>Location: 123 Fashion Street, City, State, India</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Dhanshree Dress Shop. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
