@@ -45,49 +45,29 @@
 </header>
 
 <!-- ================= COLLECTIONS PAGE ================= -->
-<section class="collections-page">
-  <div class="collections-page-container">
-    <h2>Our Collections</h2>
-    <p>Explore our stylish dresses. Use the search or filter options to find your favorite category.</p>
+<section class="products-section">
+  <h2>Our Collections</h2>
 
-    <!-- Search Bar -->
-    <div class="search-bar">
-      <input type="text" id="searchInput" placeholder="Search products...">
-    </div>
+  <!-- Search + Category Filter -->
+  <div class="collection-controls">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search dresses..."
+      onkeyup="applyFilters()"
+    >
 
-    <!-- Select Dropdown for Categories -->
-    <div class="category-select">
-      <select id="categorySelect">
-        <option value="all">All</option>
-        <option value="kid">Kid's Wear</option>
-        <option value="men">Men's Wear</option>
-        <option value="women">Women's Wear</option>
-        <option value="ethnic">Ethnic Wear</option>
-      </select>
-    </div>
-
-    <!-- Products Grid -->
-    <div class="products-grid" id="productsGrid">
-      <!-- Example product items (repeat for 50 products) -->
-      <div class="product-item" data-category="kid">
-        <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6" alt="Kid Dress 1">
-        <h4>Kid's Summer Dress</h4>
-      </div>
-      <div class="product-item" data-category="men">
-        <img src="https://images.unsplash.com/photo-1520975922284-7b9588b46c38" alt="Men Shirt 1">
-        <h4>Men's Casual Shirt</h4>
-      </div>
-      <div class="product-item" data-category="women">
-        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Women Dress 1">
-        <h4>Women's Party Dress</h4>
-      </div>
-      <div class="product-item" data-category="ethnic">
-        <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990" alt="Ethnic Dress 1">
-        <h4>Ethnic Kurti</h4>
-      </div>
-      <!-- Add more product items up to 50 -->
-    </div>
+    <select id="categorySelect" onchange="applyFilters()">
+      <option value="all">All Collections</option>
+      <option value="kids">Kids</option>
+      <option value="men">Men</option>
+      <option value="women">Women</option>
+      <option value="ethnic">Ethnic Wear</option>
+    </select>
   </div>
+
+  <!-- Products -->
+  <div id="productsGrid" class="products-grid"></div>
 </section>
 
 <!-- ================= FOOTER ================= -->

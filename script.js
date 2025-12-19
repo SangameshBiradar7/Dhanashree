@@ -51,3 +51,47 @@ if (searchInput) {
 if (categorySelect) {
   categorySelect.addEventListener('change', filterProducts);
 }
+
+// Collections section
+const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRS8XYBDHT-9Nml-YCNstptrVSNCzVEsa2l5p9SnN2NcfFQ6txVpwynETQWCj-dIAJvXVL5jbuxzV97/pub?output=csv";
+let allProducts = [];
+
+fetch(sheetURL)
+  .then(res => res.text())
+  .then(csv => {
+    const rows = csv.split("\n").slice(1);
+    allProducts = rows.map(row => {
+      const [id, name, category, image] = row.split(",");
+      return { id, name, category, image };
+    });
+    displayProducts(allProducts);
+  });
+
+function displayProducts(products) {
+  const grid = document.getElementById("productsGrid");
+  grid.innerHTML = "";
+
+  products.forEach(p => {
+    if (!p.name) return;
+    grid.innerHTML += `
+      <div class="product-card">
+        <img src="${p.image}" alt="${p.name}">
+        <h4>${p.name}</h4>
+      </div>
+    `;
+  });
+}
+
+function applyFilters() {
+  const searchText = document.getElementById("searchInput").value.toLowerCase();
+  const selectedCategory = document.getElementById("categorySelect").value;
+
+  let filtered = [];
+  for (let product of allProducts) {
+    if (product.name.toLowerCase().includes(searchText) && (selectedCategory === "all" || product.category === selectedCategory)) {
+      filtered.push(product);
+    }
+  }
+
+  displayProducts(filtered);
+}
