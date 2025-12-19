@@ -253,7 +253,7 @@ body {
 .arrival-card img {
   width: 100%;
   height: 280px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* Text */
@@ -846,7 +846,7 @@ body {
 .product-item img {
   width: 100%;
   height: 220px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .product-item h4 {
@@ -1180,5 +1180,45 @@ body {
 
   .map-section h2 {
     font-size: 24px;
+  }
+}
+/* CALL NOW FLOATING BUTTON */
+.call-now {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.call-now:hover {
+  transform: scale(1.05);
+  background-color: #0056b3;
+}
+
+.call-now svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+
+.call-now span {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .call-now span {
+    display: inline;
   }
 }
